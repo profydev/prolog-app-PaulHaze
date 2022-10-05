@@ -3,17 +3,6 @@ import { Routes } from '@config/routes';
 
 import { Header } from '@components/header';
 
-// const Header = styled.header`
-//   width: 100%;
-//   height: 80px;
-//   padding: 0 2rem;
-//   box-sizing: border-box;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background: white;
-// `;
-
 const ContactButton = styled.button`
   position: absolute;
   bottom: 2.5rem;

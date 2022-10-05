@@ -3,6 +3,8 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Routes } from '@config/routes';
 
+import { DashboardButton } from './DashboardButton';
+
 // const breakpoints = {
 //   sm: '(max-width: 480px)',
 //   md: '(max-width: 768px)',
@@ -42,28 +44,13 @@ const HeaderContainer = styled.header`
   }
 `;
 
-const ContactButton = styled.button`
-  position: absolute;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  padding: 1rem;
-  background: #7f56d9;
-  border-radius: 50%;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background: #6941c6;
-  }
-`;
-
 export function Header() {
   return (
     <HeaderContainer>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/icons/logo-large.svg" alt="Prolog logo" />
-      <a href={Routes.projects}>Dashboard</a>
+      {/* <a href={Routes.projects}>Dashboard</a> */}
+      <DashboardButton />
     </HeaderContainer>
   );
 }
