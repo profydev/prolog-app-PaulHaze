@@ -5,8 +5,6 @@ import styled from 'styled-components';
 import { Routes } from '@config/routes';
 
 const DashboardLink = styled.div`
-  width: 165px;
-  height: 44px;
   background: ${(props) => props.theme.color.primary[600]};
   display: flex;
   justify-content: center;
@@ -19,6 +17,7 @@ const DashboardLink = styled.div`
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 1rem 1.5rem;
   }
 `;
 
