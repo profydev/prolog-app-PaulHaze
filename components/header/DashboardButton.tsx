@@ -16,8 +16,16 @@ const DashboardLink = styled.div`
   a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    padding: 1rem 1.5rem;
+    font-size: 12px;
+    padding: 0.8rem 1rem;
+    @media ${(props) => props.theme.breakpoint.sm} {
+      padding: 1rem 1.2rem;
+      font-size: 14px;
+    }
+    @media ${(props) => props.theme.breakpoint.md} {
+      padding: 1rem 1.5rem;
+      font-size: 16px;
+    }
   }
 `;
 

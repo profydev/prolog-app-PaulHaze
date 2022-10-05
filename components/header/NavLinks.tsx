@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import { NavLink } from './NavLink';
 
+// Links will be hidden by default
+// But displayed on screens 768px and above
 const StyledNavLinks = styled.nav`
   display: none;
   @media ${(props) => props.theme.breakpoint.md} {

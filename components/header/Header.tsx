@@ -10,12 +10,15 @@ const HeaderContainer = styled.header`
   margin: 0 auto;
   width: 100%;
   height: 80px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
+  @media ${(props) => props.theme.breakpoint.sm} {
+    padding: 0 2rem;
+  }
 `;
 
 export function Header() {
