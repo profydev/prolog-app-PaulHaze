@@ -2,11 +2,9 @@ import * as React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-// allow this component to accept all properties of "a" tag
 type NavLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   to: string;
   linkName: string;
-  // we can add more properties we need from next/link in the future
 };
 
 const StyledLink = styled.a`
@@ -16,10 +14,10 @@ const StyledLink = styled.a`
   font-size: 1rem;
 `;
 
-export const NavLink = ({ to, linkName }: NavLinkProps) => {
+export function NavLink({ to, linkName }: NavLinkProps) {
   return (
     <Link href={to} passHref>
       <StyledLink>{linkName}</StyledLink>
     </Link>
   );
-};
+}
