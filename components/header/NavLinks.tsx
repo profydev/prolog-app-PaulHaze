@@ -31,19 +31,10 @@ const StyledLink = styled.a`
 export function NavLinks() {
   return (
     <NavBarLinks>
-      <Link href="/" passHref>
-        <StyledLink>Home</StyledLink>
-      </Link>
-      <Link href="/products" passHref>
-        <StyledLink>Products</StyledLink>
-      </Link>
-      <Link href="/documentation" passHref>
-        <StyledLink>Documentation</StyledLink>
-      </Link>
-      <Link href="/pricing" passHref>
-        <StyledLink>Pricing</StyledLink>
-      </Link>
-      <NavLink to="/pricing" linkName="test" />
+      <NavLink to="/" linkName="Home" />
+      <NavLink to="/products" linkName="Products" />
+      <NavLink to="/documentation" linkName="Documentation" />
+      <NavLink to="/pricing" linkName="Pricing" />
     </NavBarLinks>
   );
 }
