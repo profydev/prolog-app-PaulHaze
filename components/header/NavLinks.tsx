@@ -12,7 +12,7 @@ const breakpoints = {
   xl: '(min-width: 1280px)',
 };
 
-const NavBarLinks = styled.nav`
+const StyledNavLinks = styled.nav`
   display: none;
   @media ${breakpoints.md} {
     display: flex;
@@ -21,20 +21,13 @@ const NavBarLinks = styled.nav`
   }
 `;
 
-const StyledLink = styled.a`
-  color: ${(props) => props.theme.color.gray[500]};
-  text-decoration: none;
-  margin: 1rem;
-  font-size: 1rem;
-`;
-
 export function NavLinks() {
   return (
-    <NavBarLinks>
+    <StyledNavLinks>
       <NavLink to="/" linkName="Home" />
       <NavLink to="/products" linkName="Products" />
       <NavLink to="/documentation" linkName="Documentation" />
       <NavLink to="/pricing" linkName="Pricing" />
-    </NavBarLinks>
+    </StyledNavLinks>
   );
 }
