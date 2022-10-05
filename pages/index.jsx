@@ -22,11 +22,8 @@ const ContactButton = styled.button`
 const IssuesPage = () => {
   return (
     <div>
-      <Header>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/icons/logo-large.svg" alt="Prolog logo" />
-        <a href={Routes.projects}>Dashboard</a>
-      </Header>
+      <Header />
+
       <ContactButton
         onClick={() =>
           alert(
