@@ -16,7 +16,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   background: white;
-  @media ${(props) => props.theme.breakpoint.sm} {
+  @media ${({ theme }) => theme.breakpoint.sm} {
     padding: 0 2rem;
   }
 `;

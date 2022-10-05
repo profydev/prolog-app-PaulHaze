@@ -12,7 +12,7 @@ type NavLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const StyledLink = styled.a`
-  color: ${(props) => props.theme.color.gray[500]};
+  color: ${({ theme }) => theme.color.gray[500]};
   text-decoration: none;
   margin: 1rem;
   font-size: 1rem;

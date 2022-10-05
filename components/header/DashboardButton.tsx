@@ -9,7 +9,7 @@ const DashboardLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${(props) => props.theme.color.primary[600]};
+  border: 1px solid ${({ theme }) => theme.color.primary[600]};
   border-radius: 8px;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 
@@ -18,11 +18,11 @@ const DashboardLink = styled.div`
     text-decoration: none;
     font-size: 12px;
     padding: 0.8rem 1rem;
-    @media ${(props) => props.theme.breakpoint.sm} {
+    @media ${({ theme }) => theme.breakpoint.sm} {
       padding: 1rem 1.2rem;
       font-size: 14px;
     }
-    @media ${(props) => props.theme.breakpoint.md} {
+    @media ${({ theme }) => theme.breakpoint.md} {
       padding: 1rem 1.5rem;
       font-size: 16px;
     }

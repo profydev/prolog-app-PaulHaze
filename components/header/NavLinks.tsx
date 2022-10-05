@@ -7,7 +7,7 @@ import { NavLink } from './NavLink';
 // But displayed on screens 768px and above
 const StyledNavLinks = styled.nav`
   display: none;
-  @media ${(props) => props.theme.breakpoint.md} {
+  @media ${({ theme }) => theme.breakpoint.md} {
     display: flex;
     justify-content: space-between;
     align-items: center;
