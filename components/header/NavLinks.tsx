@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import styled from 'styled-components';
 
+import { NavLink } from './NavLink';
+
 const breakpoints = {
   sm: '(min-width: 480px)',
   md: '(min-width: 768px)',
@@ -41,6 +43,7 @@ export function NavLinks() {
       <Link href="/pricing" passHref>
         <StyledLink>Pricing</StyledLink>
       </Link>
+      <NavLink to="/pricing" linkName="test" />
     </NavBarLinks>
   );
 }
