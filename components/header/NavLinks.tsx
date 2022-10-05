@@ -32,9 +32,15 @@ export function NavLinks() {
       <Link href="/" passHref>
         <StyledLink>Home</StyledLink>
       </Link>
-      <StyledLink href="/products">Products</StyledLink>
-      <StyledLink href="/documentation">Documentation</StyledLink>
-      <StyledLink href="/pricing">Pricing</StyledLink>
+      <Link href="/products" passHref>
+        <StyledLink>Products</StyledLink>
+      </Link>
+      <Link href="/documentation" passHref>
+        <StyledLink>Documentation</StyledLink>
+      </Link>
+      <Link href="/pricing" passHref>
+        <StyledLink>Pricing</StyledLink>
+      </Link>
     </NavBarLinks>
   );
 }
