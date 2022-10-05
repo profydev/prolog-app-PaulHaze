@@ -3,16 +3,9 @@ import styled from 'styled-components';
 
 import { NavLink } from './NavLink';
 
-const breakpoints = {
-  sm: '(min-width: 480px)',
-  md: '(min-width: 768px)',
-  lg: '(min-width: 1024px)',
-  xl: '(min-width: 1280px)',
-};
-
 const StyledNavLinks = styled.nav`
   display: none;
-  @media ${breakpoints.md} {
+  @media ${(props) => props.theme.breakpoint.md} {
     display: flex;
     justify-content: space-between;
     align-items: center;
