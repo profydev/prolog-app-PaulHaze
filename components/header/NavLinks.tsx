@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 
 import styled from 'styled-components';
 
@@ -28,7 +29,9 @@ const StyledLink = styled.a`
 export function NavLinks() {
   return (
     <NavBarLinks>
-      <StyledLink href="/">Home</StyledLink>
+      <Link href="/" passHref>
+        <StyledLink>Home</StyledLink>
+      </Link>
       <StyledLink href="/products">Products</StyledLink>
       <StyledLink href="/documentation">Documentation</StyledLink>
       <StyledLink href="/pricing">Pricing</StyledLink>
