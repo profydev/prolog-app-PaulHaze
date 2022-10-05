@@ -1,9 +1,13 @@
 import * as React from 'react';
 import Link from 'next/link';
+
+import { UrlObject } from 'url';
 import styled from 'styled-components';
 
+type Url = string | UrlObject;
+
 type NavLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  to: string;
+  to: Url;
   linkName: string;
 };
 
