@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Routes } from "@config/routes";
+import styled from 'styled-components';
+import { Routes } from '@config/routes';
 
 const Header = styled.header`
   width: 100%;
@@ -34,12 +34,12 @@ const IssuesPage = () => {
       <Header>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/icons/logo-large.svg" alt="Prolog logo" />
-        <a href={Routes.projects}>Dashboard</a>
+        <a href={Routes.projects}>Dashboard - Test Changes</a>
       </Header>
       <ContactButton
         onClick={() =>
           alert(
-            "Implement this in Challenge 2 - Modal:\n\nhttps://profy.dev/rjs-challenge-modal"
+            'Implement this in Challenge 2 - Modal:\n\nhttps://profy.dev/rjs-challenge-modal'
           )
         }
       >
