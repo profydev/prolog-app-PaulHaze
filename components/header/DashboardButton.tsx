@@ -32,9 +32,7 @@ const DashboardLink = styled.div`
 export function DashboardButton() {
   return (
     <DashboardLink>
-      <Link href={Routes.projects}>
-        <a>Open Dashboard</a>
-      </Link>
+      <Link href={Routes.projects}>Open Dashboard</Link>
     </DashboardLink>
   );
 }
