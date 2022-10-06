@@ -1,10 +1,10 @@
-import React from "react";
-import { Story as StoryType } from "@storybook/react";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "../styles/global-style";
-import { theme } from "../styles/theme";
-import { NavigationProvider } from "../features/ui";
-import { decorator as mockRouterDecorator } from "../__mocks__/next/router";
+import React from 'react';
+import { Story as StoryType } from '@storybook/react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from '../styles/global-style';
+import { theme } from '../styles/theme';
+import { NavigationProvider } from '../features/ui';
+import { decorator as mockRouterDecorator } from '../__mocks__/next/router';
 
 export const decorators = [
   (Story: StoryType) => (
@@ -19,7 +19,7 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,

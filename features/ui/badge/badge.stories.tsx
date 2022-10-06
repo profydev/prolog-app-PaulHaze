@@ -1,13 +1,13 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Badge, BadgeSize, BadgeColor } from "./badge";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Badge, BadgeSize, BadgeColor } from './badge';
 
 export default {
-  title: "UI/Badge",
+  title: 'UI/Badge',
   component: Badge,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
 } as ComponentMeta<typeof Badge>;
 
@@ -25,5 +25,5 @@ Default.args = {
   color: BadgeColor.primary,
 };
 Default.parameters = {
-  viewMode: "docs",
+  viewMode: 'docs',
 };

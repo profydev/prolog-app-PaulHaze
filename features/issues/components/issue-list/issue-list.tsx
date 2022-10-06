@@ -1,13 +1,13 @@
-import { useRouter } from "next/router";
-import styled from "styled-components";
-import { useIssues } from "@features/issues";
-import { ProjectLanguage, useProjects } from "@features/projects";
-import { color, space, textFont } from "@styles/theme";
-import { IssueRow } from "./issue-row";
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import { useIssues } from '@features/issues';
+import { ProjectLanguage, useProjects } from '@features/projects';
+import { color, space, textFont } from '@styles/theme';
+import { IssueRow } from './issue-row';
 
 const Container = styled.div`
   background: white;
-  border: 1px solid ${color("gray", 200)};
+  border: 1px solid ${color('gray', 200)};
   box-sizing: border-box;
   box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
     0px 2px 4px -2px rgba(16, 24, 40, 0.06);
@@ -21,14 +21,14 @@ const Table = styled.table`
 `;
 
 const HeaderRow = styled.tr`
-  border-bottom: 1px solid ${color("gray", 200)};
+  border-bottom: 1px solid ${color('gray', 200)};
 `;
 
 const HeaderCell = styled.th`
   padding: ${space(3, 6)};
   text-align: left;
-  color: ${color("gray", 500)};
-  ${textFont("xs", "medium")};
+  color: ${color('gray', 500)};
+  ${textFont('xs', 'medium')};
 `;
 
 const PaginationContainer = styled.div`
@@ -36,14 +36,14 @@ const PaginationContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: ${space(4, 6)};
-  border-top: 1px solid ${color("gray", 200)};
+  border-top: 1px solid ${color('gray', 200)};
 `;
 
 const PaginationButton = styled.button`
   height: 38px;
   padding: ${space(0, 4)};
   background: white;
-  border: 1px solid ${color("gray", 300)};
+  border: 1px solid ${color('gray', 300)};
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 6px;
 
@@ -53,12 +53,12 @@ const PaginationButton = styled.button`
 `;
 
 const PageInfo = styled.div`
-  color: ${color("gray", 300)};
-  ${textFont("sm", "regular")}
+  color: ${color('gray', 300)};
+  ${textFont('sm', 'regular')}
 `;
 
 const PageNumber = styled.span`
-  ${textFont("sm", "medium")}
+  ${textFont('sm', 'medium')}
 `;
 
 export function IssueList() {
@@ -133,7 +133,7 @@ export function IssueList() {
           </PaginationButton>
         </div>
         <PageInfo>
-          Page <PageNumber>{meta?.currentPage}</PageNumber> of{" "}
+          Page <PageNumber>{meta?.currentPage}</PageNumber> of{' '}
           <PageNumber>{meta?.totalPages}</PageNumber>
         </PageInfo>
       </PaginationContainer>

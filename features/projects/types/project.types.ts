@@ -1,13 +1,13 @@
 export enum ProjectLanguage {
-  react = "react",
-  node = "node",
-  python = "python",
+  react = 'react',
+  node = 'node',
+  python = 'python',
 }
 
 export enum ProjectStatus {
-  stable = "stable",
-  warning = "warning",
-  critical = "critical",
+  stable = 'stable',
+  warning = 'warning',
+  critical = 'critical',
 }
 
 export type Project = {
