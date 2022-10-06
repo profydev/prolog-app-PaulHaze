@@ -1,14 +1,14 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { SidebarNavigation } from "./sidebar-navigation";
-import { Routes } from "@config/routes";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { SidebarNavigation } from './sidebar-navigation';
+import { Routes } from '@config/routes';
 
 export default {
-  title: "UI/SidebarNavigation",
+  title: 'UI/SidebarNavigation',
   component: SidebarNavigation,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
 } as ComponentMeta<typeof SidebarNavigation>;
 
