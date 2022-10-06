@@ -1,14 +1,14 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ProjectCard } from "./project-card";
-import { ProjectLanguage, ProjectStatus } from "@features/projects";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ProjectCard } from './project-card';
+import { ProjectLanguage, ProjectStatus } from '@features/projects';
 
 export default {
-  title: "Project/ProjectCard",
+  title: 'Project/ProjectCard',
   component: ProjectCard,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
 } as ComponentMeta<typeof ProjectCard>;
 
@@ -21,8 +21,8 @@ const Template: ComponentStory<typeof ProjectCard> = (props) => (
 export const Default = Template.bind({});
 Default.args = {
   project: {
-    id: "xzy",
-    name: "Frontend - Web",
+    id: 'xzy',
+    name: 'Frontend - Web',
     language: ProjectLanguage.react,
     numIssues: 420,
     numEvents24h: 721,
@@ -30,5 +30,5 @@ Default.args = {
   },
 };
 Default.parameters = {
-  viewMode: "docs",
+  viewMode: 'docs',
 };
