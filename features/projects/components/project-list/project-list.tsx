@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { ProjectCard } from "../project-card";
-import { useProjects } from "../../api/use-projects";
-import { breakpoint, space } from "@styles/theme";
+import styled from 'styled-components';
+import { ProjectCard } from '../project-card';
+import { useProjects } from '../../api/use-projects';
+import { breakpoint, space } from '@styles/theme';
 
 const List = styled.ul`
   display: grid;
@@ -13,7 +13,7 @@ const List = styled.ul`
   padding: 0;
   margin: 0;
 
-  @media (min-width: ${breakpoint("desktop")}) {
+  @media (min-width: ${breakpoint('desktop')}) {
     grid-template-columns: repeat(auto-fit, 400px);
   }
 `;

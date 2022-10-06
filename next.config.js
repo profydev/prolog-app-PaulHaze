@@ -5,7 +5,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["prolog-api.profy.dev"],
+    domains: ['prolog-api.profy.dev'],
   },
 };
 

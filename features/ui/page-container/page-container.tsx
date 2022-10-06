@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import styled from "styled-components";
-import { SidebarNavigation } from "@features/ui";
-import { color, displayFont, textFont, space, breakpoint } from "@styles/theme";
+import React from 'react';
+import Head from 'next/head';
+import styled from 'styled-components';
+import { SidebarNavigation } from '@features/ui';
+import { color, displayFont, textFont, space, breakpoint } from '@styles/theme';
 
 type PageContainerProps = {
   children: React.ReactNode;
@@ -13,9 +13,9 @@ type PageContainerProps = {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${color("gray", 900)};
+  background: ${color('gray', 900)};
 
-  @media (min-width: ${breakpoint("desktop")}) {
+  @media (min-width: ${breakpoint('desktop')}) {
     flex-direction: row;
   }
 `;
@@ -32,7 +32,7 @@ const ContentContainer = styled.div`
   padding: ${space(8, 3)};
   background: white;
 
-  @media (min-width: ${breakpoint("desktop")}) {
+  @media (min-width: ${breakpoint('desktop')}) {
     min-height: calc(100vh - ${space(3)} - 2 * ${space(8)});
     margin-top: ${space(3)};
     padding: ${space(8)};
@@ -42,14 +42,14 @@ const ContentContainer = styled.div`
 
 const Title = styled.h1`
   margin: ${space(0, 0, 1)};
-  color: ${color("gray", 900)};
-  ${displayFont("sm", "medium")}
+  color: ${color('gray', 900)};
+  ${displayFont('sm', 'medium')}
 `;
 
 const Info = styled.div`
   margin-bottom: ${space(8)};
-  color: ${color("gray", 500)};
-  ${textFont("md", "regular")}
+  color: ${color('gray', 500)};
+  ${textFont('md', 'regular')}
 `;
 
 export function PageContainer({ children, title, info }: PageContainerProps) {
