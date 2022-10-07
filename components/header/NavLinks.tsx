@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { breakpoint } from '@styles/theme';
 
 import { NavLink } from './NavLink';
 
@@ -7,7 +8,7 @@ import { NavLink } from './NavLink';
 // But displayed on screens 768px and above
 const StyledNavLinks = styled.nav`
   display: none;
-  @media ${({ theme }) => theme.breakpoint.md} {
+  @media ${breakpoint('md')} {
     display: flex;
     justify-content: space-between;
     align-items: center;

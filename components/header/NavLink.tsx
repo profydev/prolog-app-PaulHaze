@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { UrlObject } from 'url';
 import styled from 'styled-components';
+import { color } from '@styles/theme';
 
 type Url = string | UrlObject;
 
@@ -12,7 +13,7 @@ type NavLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const StyledLink = styled.a`
-  color: ${({ theme }) => theme.color.gray[500]};
+  color: ${color('gray', 500)};
   text-decoration: none;
   margin: 1rem;
   font-size: 1rem;
