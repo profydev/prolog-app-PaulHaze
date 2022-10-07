@@ -1,23 +1,23 @@
-import Link from "next/link";
-import styled from "styled-components";
-import capitalize from "lodash/capitalize";
-import { Badge, BadgeColor } from "@features/ui";
+import Link from 'next/link';
+import styled from 'styled-components';
+import capitalize from 'lodash/capitalize';
+import { Badge, BadgeColor } from '@features/ui';
 import {
   Project,
   ProjectLanguage,
   ProjectStatus,
-} from "../../types/project.types";
-import { color, displayFont, space, textFont } from "@styles/theme";
-import { Routes } from "@config/routes";
+} from '../../types/project.types';
+import { color, displayFont, space, textFont } from '@styles/theme';
+import { Routes } from '@config/routes';
 
 type ProjectCardProps = {
   project: Project;
 };
 
 const languageNames = {
-  [ProjectLanguage.react]: "React",
-  [ProjectLanguage.node]: "Node.js",
-  [ProjectLanguage.python]: "Python",
+  [ProjectLanguage.react]: 'React',
+  [ProjectLanguage.node]: 'Node.js',
+  [ProjectLanguage.python]: 'Python',
 };
 
 const statusColors = {
@@ -42,7 +42,7 @@ const TopContainer = styled.div`
 
 const BottomContainer = styled.div`
   padding: ${space(4, 6)};
-  border-top: 3px solid ${color("gray", 200)};
+  border-top: 3px solid ${color('gray', 200)};
   display: flex;
   justify-content: flex-end;
 `;
@@ -58,12 +58,12 @@ const LanguageIcon = styled.img`
 `;
 
 const Name = styled.div`
-  ${textFont("md", "medium")}
+  ${textFont('md', 'medium')}
 `;
 
 const Language = styled.div`
-  color: ${color("gray", 500)};
-  ${textFont("sm", "regular")}
+  color: ${color('gray', 500)};
+  ${textFont('sm', 'regular')}
 `;
 
 const InfoContainer = styled.div`
@@ -80,12 +80,12 @@ const Issues = styled.div`
 
 const IssuesTitle = styled.div`
   margin-bottom: ${space(2)};
-  color: ${color("gray", 500)};
-  ${textFont("sm", "medium")}
+  color: ${color('gray', 500)};
+  ${textFont('sm', 'medium')}
 `;
 
 const IssuesNumber = styled.div`
-  ${displayFont("md", "semibold")}
+  ${displayFont('md', 'semibold')}
 `;
 
 const Status = styled.div`
@@ -101,7 +101,7 @@ const Status = styled.div`
 
 const ViewIssuesAnchor = styled.a`
   text-decoration: none;
-  ${textFont("sm", "medium")}
+  ${textFont('sm', 'medium')}
 `;
 
 export function ProjectCard({ project }: ProjectCardProps) {

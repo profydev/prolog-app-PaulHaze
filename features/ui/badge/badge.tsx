@@ -1,19 +1,19 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { color, textFont, space } from "@styles/theme";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { color, textFont, space } from '@styles/theme';
 
 export enum BadgeSize {
-  sm = "sm",
-  md = "md",
-  lg = "lg",
+  sm = 'sm',
+  md = 'md',
+  lg = 'lg',
 }
 
 export enum BadgeColor {
-  primary = "primary",
-  gray = "gray",
-  error = "error",
-  warning = "warning",
-  success = "success",
+  primary = 'primary',
+  gray = 'gray',
+  error = 'error',
+  warning = 'warning',
+  success = 'success',
 }
 
 type BadgeProps = {
@@ -34,19 +34,19 @@ const Container = styled.div<{ size: BadgeSize; color: BadgeColor }>`
         return css`
           padding: ${space(0, 2)};
           height: 1.375rem;
-          ${textFont("xs", "medium")}
+          ${textFont('xs', 'medium')}
         `;
       case BadgeSize.md:
         return css`
           padding: 0 0.625rem};
           height: 1.5rem;
-          ${textFont("sm", "medium")}
+          ${textFont('sm', 'medium')}
         `;
       case BadgeSize.lg:
         return css`
           padding: ${space(0, 3)};
           height: 1.75rem;
-          ${textFont("sm", "medium")}
+          ${textFont('sm', 'medium')}
         `;
     }
   }}
@@ -55,8 +55,8 @@ const Container = styled.div<{ size: BadgeSize; color: BadgeColor }>`
     switch (props.color) {
       case BadgeColor.gray:
         return css`
-          background: ${color("gray", 100)};
-          color: ${color("gray", 700)};
+          background: ${color('gray', 100)};
+          color: ${color('gray', 700)};
         `;
       default:
         return css`

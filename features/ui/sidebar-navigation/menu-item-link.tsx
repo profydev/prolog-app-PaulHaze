@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import styled from "styled-components";
-import { color, space } from "@styles/theme";
+import Link from 'next/link';
+import React from 'react';
+import styled from 'styled-components';
+import { color, space } from '@styles/theme';
 
 type MenuItemProps = {
   text: string;
@@ -18,7 +18,7 @@ export const ListItem = styled.li<{ isActive?: boolean }>`
   margin-top: ${space(1)};
   padding: ${space(0, 3)};
   background: ${(props) =>
-    props.isActive ? color("gray", 700)(props) : "transparent"};
+    props.isActive ? color('gray', 700)(props) : 'transparent'};
   border-radius: 6px;
 
   &:first-child {
@@ -29,7 +29,7 @@ export const ListItem = styled.li<{ isActive?: boolean }>`
 export const Anchor = styled.a`
   display: flex;
   align-items: center;
-  color: ${color("gray", 100)};
+  color: ${color('gray', 100)};
   text-decoration: none;
 `;
 
