@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import styled from 'styled-components';
+import { breakpoint } from '@styles/theme';
 
 import { DashboardButton } from './DashboardButton';
 import { NavLinks } from './NavLinks';
@@ -16,7 +17,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   background: white;
-  @media ${({ theme }) => theme.breakpoint.sm} {
+  @media ${breakpoint('sm')} {
     padding: 0 2rem;
   }
 `;
